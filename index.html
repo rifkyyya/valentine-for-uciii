@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine untuk Uciii</title>
+    <style>
+      body {
+        background-color: #ffb3b3;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 3em;
+        color: #fff;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        animation: slideIn 2s ease-out;
+      }
+
+      .heart {
+        font-size: 100px;
+        color: red;
+        animation: heartbeat 1.5s infinite;
+      }
+
+      .message {
+        font-size: 1.5em;
+        color: #fff;
+        margin-top: 20px;
+        animation: fadeInMessage 3s ease-in-out;
+      }
+
+      .button {
+        background-color: #ff66b2;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        cursor: pointer;
+        margin-top: 30px;
+        border-radius: 25px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .button:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadeInMessage {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Uciii,</h1>
+      <div class="heart">❤️</div>
+      <p class="message">Aku suka banget sama kamu, semoga kamu bisa jadi bagian dari hidup aku.</p>
+      <button class="button" onclick="nextPage()">Mau jadi pacarku?</button>
+    </div>
+
+    <script>
+      function nextPage() {
+        window.location.href = 'next.html';
+      }
+    </script>
+  </body>
+</html>
